@@ -1,6 +1,10 @@
+/*ESSE É ARQUIVO PRINCIPAL ONDE ESTARÁ TODA A VISUALIZAÇÃO DO SITE.*/
 import './App.css';
+import 'bootstrap-icons/font/bootstrap-icons.css'; // Importa o ícone do site do Bootstrape
 import brasCubasImg from './assets/bras_cubas.jpeg'; // Importou essa img para o arquivo js
 import Capa from './Capa';
+import SeletorCapitulos from './SeletorCapitulos';
+import BotoesControle from './BotoesControle'; // Importando os botões de controle
 /*k*/
 function App() {
   const informacoesLivro = {
@@ -17,6 +21,8 @@ function App() {
         imagemCapa = {informacoesLivro.capa} 
         textoAlternativo = {informacoesLivro.textoAlternativo}
       />
+      <SeletorCapitulos capituloAtual = {1} />
+      <BotoesControle />
     </>
   );
 }
