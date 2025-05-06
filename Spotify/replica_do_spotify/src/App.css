@@ -1,0 +1,35 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Coolvetica";
+  src: url(assets/font/coolvetica/Coolvetica\ Hv\ Comp.otf) format(OpenType Font);
+  font-style: normal;
+  font-weight: bold;
+}
+:root{
+  --MainColor: #000000;
+  --corFundo1: #1db954;
+  --corFundo2: #1db954;
+  --FontsColor: #ffffff;
+}
+body{
+  background: linear-gradient();
+  font-family: "Coolvetica", "Arial", Helvetica, sans-serif;
+}
+.containerHeader > a{
+  color: var(--FontsColor);
+  text-decoration: none;
+}
+.containerHeader > a:hover{
+  text-decoration: underline;
+}
+.containerHeader{
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--MainColor);
+}
