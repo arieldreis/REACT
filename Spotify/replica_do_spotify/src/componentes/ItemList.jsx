@@ -12,7 +12,7 @@ const ItemList = ({title, items}) => {
         <a href="/" className='item-list__link'>Mostrar Todos</a>
       </div>
       <div className='item-list__container'>
-        {Array(items)
+        {artistArray(items)
         .fill()
         .map((currentValue, index) => (
         <SingleItem key={`${title}-${index}`}/>
