@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Boldonse&family=Cal+Sans&family=Jersey+15&family=Oswald:wght@200..700&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+VN:wght@100..400&family=Special+Gothic+Condensed+One&family=Tagesschrift&family=Yellowtail&display=swap');
 :root {
   --green-50: hsl(141deg 75% 90%);
   --green-100: hsl(141deg 75% 85%);
@@ -20,12 +22,12 @@
   --border-radius-m: 10px;
   --border-radius-l: 15px;
 }
-@font-face {
+/* @font-face {
   font-family: "Coolvetica";
-  src: url("assets/font/coolvetica/Coolvetica\ Rg.otf") format("opentype");
+  src: url("assets/font/coolvetica/Coolvetica\ Rg\ Cram.otf") format("opentype");
   font-style: normal;
   font-weight: normal;
-}
+} */
 /* Reset */
 /* Seletor Universal */
 * {
@@ -42,7 +44,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  font-size: 1em;
 }
 
 a:hover {
@@ -55,7 +56,7 @@ img {
 }
 
 #root {
-  font-family: "Coolvetica", sans-serif;
+  font-family: 'Big Shoulders';
   display: flex;
   flex-direction: column;
   min-height: 100svh;

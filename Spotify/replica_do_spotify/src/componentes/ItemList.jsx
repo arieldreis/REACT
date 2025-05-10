@@ -1,6 +1,6 @@
 import React from 'react';
 import SingleItem from './SingleItem';
-import {  } from "../";
+import {artistArray} from './assets/database/artists.js'
 
 const ItemList = ({title, items}) => {
   // ´props mostra todo o objeto
