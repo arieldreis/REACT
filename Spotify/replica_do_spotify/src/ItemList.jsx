@@ -1,6 +1,7 @@
 import React from 'react';
 import SingleItem from './SingleItem';
-import {  } from "../";
+import artistArray from "./assets/database/artists";
+import songsArray from "./assets/database/songs";
 
 const ItemList = ({title, items}) => {
   // ´props mostra todo o objeto
@@ -12,10 +13,15 @@ const ItemList = ({title, items}) => {
         <a href="/" className='item-list__link'>Mostrar Todos</a>
       </div>
       <div className='item-list__container'>
-        {Array(items)
-        .fill()
-        .map((currentValue, index) => (
-        <SingleItem key={`${title}-${index}`}/>
+        {artistArray
+        .filter((currentValue, index) => index < items)
+        .map((currentObj, index) => (
+        <SingleItem 
+        id={currentObj.id}
+        name={currentObj.name}
+        image={currentObj.image}
+        banner={currentObj.banner}
+        key={`${title}-${index}`}/>
         ))}
       </div>
     </div>
