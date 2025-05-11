@@ -1,10 +1,8 @@
 import React from 'react'
-
+import Principal from './Principal'
 const Songs = () => {
   return (
-    <div>
-      
-    </div>
+    <Principal type="songs"/>
   )
 }
 
