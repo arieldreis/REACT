@@ -1,12 +1,13 @@
 import React from 'react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"; // Importar um ícone
 import {faCirclePlay} from "@fortawesome/free-solid-svg-icons"; // ImportAR O TIPO DE ÍCONE
-const SingleItem = ({id, image, name, banner}) => {
+import { Link } from 'react-router-dom';
+const SingleItem = ({id, image, name, banner, artist, idPath}) => {
   return (
-    <div className='single-item'>
+    <Link to={`${idPath}/${id}`} className='single-item'>
         <div className='single-item__div-image-button'>
             <div className='single-item__div-image'>
-              <img src={image} alt="Imagem do Artista x" className='single-item__image'/>
+              <img src={image} alt={`Imagem do Artista ${name}`} className='single-item__image'/>
             </div>
             <FontAwesomeIcon icon={faCirclePlay} className='single-item__icon'/>
         </div>
@@ -14,9 +15,9 @@ const SingleItem = ({id, image, name, banner}) => {
             <div className='single-item__2lines'>
               <p className='single-item__title'>{name}</p>
             </div>
-              <p className='single-item__type'>Artista</p>
+              <p className='single-item__type'>{artist ?? "Artista"}</p>
           </div>
-      </div>
+      </Link>
   )
 }
 

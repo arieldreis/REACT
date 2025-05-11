@@ -44,3 +44,11 @@ export default App2
           </>
         )}
 */
+
+// id={currentObj.id}
+        // name={currentObj.name}
+        // image={currentObj.image}
+        // banner={currentObj.banner}
+        // key={`${title}-${index}`}
+
+// Spread operator: The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.
