@@ -52,3 +52,6 @@ export default App2
         // key={`${title}-${index}`}
 
 // Spread operator: The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.
+// Quand componentes se re-rendernizão?
+// Uma das situações é quando uma varivel de estado usada por esse componente é atualizada.
+// Hook - useState

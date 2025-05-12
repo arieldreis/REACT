@@ -21,6 +21,7 @@
   --border-radius-s: 5px;
   --border-radius-m: 10px;
   --border-radius-l: 15px;
+  --my-border-radius: 10px;
 }
 /* @font-face {
   font-family: "Coolvetica";
@@ -246,8 +247,8 @@ img {
 
   display: flex;
   align-items: end;
-  padding: 25px;
-  height: 40svh;
+  padding: 30px;
+  height: 45svh;
   background-size: cover;
   background-position-y: 20%;
   background-image: linear-gradient(to bottom, var(--_shade), var(--_shade)),
