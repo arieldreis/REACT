@@ -5,6 +5,7 @@
 import express from 'express'
 import artistArray from '../../src/assets/database/artists.js'; // ✅ certo
 import songsArray from '../../src/assets/database/songs.js'
+import { database } from './connect.js';
 const app = express();
 /*
 Ela cria uma instância do servidor Express, que você vai usar pra definir rotas, middlewares, respostas etc.
@@ -27,11 +28,11 @@ app.get('/', (request, response) => {
     response.send("<h3>Só vamos trabalhar com os endpoints '/songs' e '/artist'</h3>");
 });
 // Alguém bate na porta 🚪
-app.get('/artists', (request, response) => {
-    response.send(artistArray);
+app.get('/artists', async(request, response) => {
+    response.send(await database.collection("artists").find({}).toArray());
 });
-app.get('/songs', (request, response) => {
-    response.send(songsArray);
+app.get('/songs', async(request, response) => {
+    response.send(await database.collection("songs").find({}).toArray());
 });
 app.listen(PORT, () => {
     // Code of function
