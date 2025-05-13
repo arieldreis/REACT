@@ -2,7 +2,9 @@
 // Requisição do tipo GET, POST, PUT, DELETE
 // CRUD -> CREATE READ UPDATE DELETE
 // ENDPOINT
-import express from 'express'
+// middleware função
+import express from 'express';
+import cors from 'cors';
 import { database } from './connect.js';
 const app = express();
 /*
@@ -14,6 +16,8 @@ E aí guarda tudo isso na variável app.
 
 const PORT = 3001;
 // Exemplo de rota
+//app.use(cors());
+// app.use(express.json());
 /*
 🧠 Que que tá rolando aqui?
 '/' → é o caminho da rota (nesse caso, a raiz do site).
