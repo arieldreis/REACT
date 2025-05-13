@@ -3,8 +3,6 @@
 // CRUD -> CREATE READ UPDATE DELETE
 // ENDPOINT
 import express from 'express'
-import artistArray from '../../src/assets/database/artists.js'; // ✅ certo
-import songsArray from '../../src/assets/database/songs.js'
 import { database } from './connect.js';
 const app = express();
 /*
