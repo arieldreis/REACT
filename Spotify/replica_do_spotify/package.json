@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev:back": "cd back_end && npm install && node server.js",
+    "dev:front": "npx vite --config front_end/vite.config.js --root front_end",
+    "dev:all": "npm-run-all --parallel dev:back dev:front",
+    "build:front": "cd front_end && npm run build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
@@ -28,6 +32,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "npm-run-all": "^4.1.5"
   }
 }
