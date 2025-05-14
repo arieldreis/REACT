@@ -10,7 +10,7 @@ const principal = ({type}) => {
       {
         type === "artists" || type === undefined ? (<ItemList 
         title="Artistas" 
-        items={10} 
+        items={20} 
         itemsArray={artistArray} 
         path='/artists' 
         idPath="artist"
@@ -20,7 +20,7 @@ const principal = ({type}) => {
       {
         type === "songs" || type === undefined ? (<ItemList 
         title="Músicas" 
-        items={20} 
+        items={100} 
         itemsArray={songsArray} 
         path='/songs' 
         idPath="song"
