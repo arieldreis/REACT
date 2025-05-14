@@ -1,7 +1,7 @@
 import React from 'react';
 import SingleItem from './SingleItem';
-import artistArray from "./assets/database/artists.js";
-import songsArray from "./assets/database/songs.js";
+import {artistArray} from './assets/database/artists.js';
+import {songsArray } from './assets/database/songs.js';
 import { Link, useLocation } from 'react-router-dom';
 
 const ItemList = ({title, items, itemsArray, path, idPath}) => {
@@ -33,4 +33,4 @@ const ItemList = ({title, items, itemsArray, path, idPath}) => {
   )
 }
 
-export default ItemList
+export default ItemList;

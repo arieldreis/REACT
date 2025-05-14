@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SongItem from './SongItem';
-import songsArray from './assets/database/songs';
+import {songsArray } from './assets/database/songs.js';
 
 const SongList = ({ songsArray }) => {
   // Cria um estado chamado 'visibleSongs' que começa com 5 músicas visíveis
