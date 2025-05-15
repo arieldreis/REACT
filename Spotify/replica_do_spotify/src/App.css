@@ -488,11 +488,11 @@ img {
 }
 
 .player__bar-progress {
-  --_progress: 0;
+  --_progress: 0%;
 
   height: 100%;
   width: var(--_progress);
-  background-color: white;
+  background-color: var(--green-700);
   transition: width var(--transition-function) var(--transition-duration);
 }
 
